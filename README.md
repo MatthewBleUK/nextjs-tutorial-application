@@ -34,4 +34,6 @@ pnpm dev
 
 ## Screenshots
 
-<img src="./screenshots/homepage.png" width="100px">
+<img src="./screenshots/homepage.png" alt="Application's homepage image">
+<img src="./screenshots/createpost.png" alt="Application's create post page image">
+<img src="./screenshots/profile.png" alt="Application's profile page image">
