@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) tutorial project that I followed from JavaScript Mastery's <a href="https://www.youtube.com/@javascriptmastery">Youtube channel</a>. The application allows users to easily discover and share Ai prompts.
+
+Vercel example site: https://nextjs-tutorial-application.vercel.app/
 
 ## Getting Started
 
-First, run the development server:
+Add the environment variables inside a .env.local file in the root directory. The application requires Google OAuth 2.0, MongoDB Atlas Cluster and NextAuth.js environment variables.
+
+```
+GOOGLE_ID=[]
+GOOGLE_CLIENT_SECRET=[]
+MONGODB_URI=[]
+
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL_INTERNAL=http://localhost:3000
+NEXTAUTH_SECRET=
+```
+
+The NEXTAUTH_SECRET variable can be created with:
+
+```
+openssl rand -base64 32
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -12,23 +32,6 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="./screenshots/homepage.png" width="100px">
